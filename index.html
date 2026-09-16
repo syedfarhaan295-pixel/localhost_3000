@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Basic Tags Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="hero">
+      <div class="container hero-content">
+        <img src="school-logo.svg" alt="School logo" class="school-logo" />
+        <div class="hero-text">
+          <h1><span>Welcome to HTML</span></h1>
+          <h2>Basic HTML Tags Demonstration</h2>
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <h3>About HTML</h3>
+        <p>
+          <strong>HTML</strong> stands for <strong>HyperText Markup Language</strong>.
+          It is used to create and structure web pages. HTML works together with
+          <em>CSS</em> and <em>JavaScript</em> to create interactive websites.
+        </p>
+      </section>
+
+      <section class="card">
+        <h3>Text Formatting Tags</h3>
+        <p class="formatting">
+          <b>Bold Text</b><br />
+          <i>Italic Text</i><br />
+          <u>Underlined Text</u><br />
+          <strong>Strong Text</strong><br />
+          <em>Emphasized Text</em><br />
+          <mark>Highlighted Text</mark><br />
+          <del>Deleted Text</del><br />
+          H<sub>2</sub>O<br />
+          x<sup>2</sup>
+        </p>
+      </section>
+
+      <section class="card two-col">
+        <div>
+          <h3>Ordered List</h3>
+          <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+          </ol>
+        </div>
+
+        <div>
+          <h3>Unordered List</h3>
+          <ul>
+            <li>Computer</li>
+            <li>Keyboard</li>
+            <li>Mouse</li>
+            <li>Printer</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>Hyperlink</h3>
+        <p>
+          <a href="https://www.google.com" target="_blank" rel="noreferrer">
+            Visit Google
+          </a>
+        </p>
+      </section>
+
+      <section class="card image-card">
+        <h3>Image</h3>
+        <img src="college.svg" alt="College Image" width="300" height="200" />
+      </section>
+
+      <section class="card">
+        <h3>Student Information</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Course</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Rahul</td>
+              <td>BCA</td>
+              <td>2nd Year</td>
+            </tr>
+            <tr>
+              <td>Priya</td>
+              <td>BCA</td>
+              <td>2nd Year</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="card">
+        <h3>Simple Form</h3>
+        <form id="studentForm">
+          <div class="field">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" />
+          </div>
+
+          <div class="field">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" />
+          </div>
+
+          <div class="field radio-group">
+            <span>Gender:</span>
+            <label><input type="radio" name="gender" value="Male" /> Male</label>
+            <label><input type="radio" name="gender" value="Female" /> Female</label>
+          </div>
+
+          <div class="actions">
+            <button type="submit">Submit</button>
+            <button type="reset" class="secondary">Reset</button>
+          </div>
+
+          <p id="formMessage" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p><strong>© <span id="year"></span> Basic HTML Tags Lab Program</strong></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
